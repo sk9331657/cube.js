@@ -17,7 +17,7 @@
   "main": "index.js",
   "types": "index.d.ts",
   "dependencies": {
-    "@hapi/joi": "^15.1.1",
+    "@hapi/joi": "^17.1.1",
     "chrono-node": "1.4.4",
     "jsonwebtoken": "^8.3.0",
     "moment": "^2.24.0",
