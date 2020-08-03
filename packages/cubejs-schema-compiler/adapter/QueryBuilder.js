@@ -13,6 +13,7 @@ const oracle = require('./OracleQuery');
 const sqlite = require('./SqliteQuery');
 const awselasticsearch = require('./AWSElasticSearchQuery');
 const elasticsearch = require('./ElasticSearchQuery');
+const mongodb = require('./MongoSearchQuery');
 
 const ADAPTERS = {
   postgres,
@@ -31,7 +32,8 @@ const ADAPTERS = {
   oracle,
   sqlite,
   awselasticsearch,
-  elasticsearch
+  elasticsearch,
+  mongodb
 };
 exports.query = (compilers, dbType, queryOptions) => {
   if (!queryOptions.dialectClass && !ADAPTERS[dbType]) {

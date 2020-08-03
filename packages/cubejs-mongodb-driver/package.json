@@ -1,0 +1,25 @@
+{
+  "name": "@cubejs-backend/mongodb-driver",
+  "description": "Cube.js MongoDB driver",
+  "author": "sk9331657@gmail.com",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cube-js/cube.js.git",
+    "directory": "packages/cubejs-mongodb-driver"
+  },
+  "engines": {
+    "node": ">=8.11.1"
+  },
+  "main": "driver/MongoDBDriver.js",
+  "dependencies": {
+    "@cubejs-backend/query-orchestrator": "^0.19.53",
+    "generic-pool": "^3.6.0",
+    "mongodb": "^3.5.9",
+    "node-sql-parser": "^3.0.3"
+  },
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  }
+}
